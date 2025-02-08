@@ -34,10 +34,7 @@ This project uses Axios to fetch data from the TMDB (The Movie Database) API, wh
 1. Go to TMDB
 2. Sign up for an account
 3. Generate an API key from the Developer section
-4. Add your API key in the `.env` file as follows:
-```
-VITE_TMDB_API_KEY=your_api_key_here
-```
+4. Add your API key in the `axios` file as follows:
 
 ## 🔌 Axios Configuration
 
@@ -77,7 +74,7 @@ cd Movies_website
 npm install
 ```
 
-3. Create a `.env` file in the root directory and add your TMDB API Key:
+3. Create a `axios.jsx` file  and add your TMDB API Key:
 ```
 VITE_TMDB_API_KEY=your_api_key_here
 ```
