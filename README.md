@@ -14,7 +14,7 @@ Check out the live demo: [Movies Website](https://movies-website-tmdb.netlify.ap
 *Browse trending and popular movies with infinite scroll*
 
 #### Movie Details
-![Movie Details](./public/screenshots/movie-details.png)
+![Movie Details](https://github.com/TechCoder645/Movies_website/blob/main/src/assets/movies.png?raw=true)
 *Detailed movie information with cast, trailers, and similar movies*
 
 #### Search Feature
