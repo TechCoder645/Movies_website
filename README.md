@@ -18,7 +18,7 @@ Check out the live demo: [Movies Website](https://movies-website-tmdb.netlify.ap
 *Detailed movie information with cast, trailers, and similar movies*
 
 #### Search Feature
-![Search](./public/screenshots/search.png)
+![Search](https://github.com/TechCoder645/Movies_website/blob/main/src/assets/search.png?raw=true)
 *Search for your favorite movies with real-time results*
 
 ### ✨ Key Features Demo
