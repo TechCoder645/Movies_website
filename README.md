@@ -5,7 +5,7 @@ A modern and responsive movies website built with React, Redux Toolkit, and Tail
 ## 🎯 Demo
 
 ### Live Demo
-Check out the live demo: [Movies Website](https://movies-website-techcoder645.vercel.app/)
+Check out the live demo: [Movies Website](https://movies-website-tmdb.netlify.app/)
 
 ### 📸 Screenshots
 
