@@ -2,6 +2,32 @@
 
 A modern and responsive movies website built with React, Redux Toolkit, and Tailwind CSS. Browse, search, and explore your favorite movies with an intuitive user interface.
 
+## 🎯 Demo
+
+### Live Demo
+Check out the live demo: [Movies Website](https://movies-website-techcoder645.vercel.app/)
+
+### 📸 Screenshots
+
+#### Home Page
+![Home Page](./public/screenshots/home.png)
+*Browse trending and popular movies with infinite scroll*
+
+#### Movie Details
+![Movie Details](./public/screenshots/movie-details.png)
+*Detailed movie information with cast, trailers, and similar movies*
+
+#### Search Feature
+![Search](./public/screenshots/search.png)
+*Search for your favorite movies with real-time results*
+
+### ✨ Key Features Demo
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- **Dynamic Loading**: Infinite scroll for smooth browsing experience
+- **Video Integration**: Watch trailers and clips directly in the app
+- **Search Functionality**: Real-time search with instant results
+- **Movie Details**: Comprehensive movie information including cast, ratings, and similar movies
+
 ## 🚀 Features
 
 - Modern and responsive design
@@ -34,7 +60,10 @@ This project uses Axios to fetch data from the TMDB (The Movie Database) API, wh
 1. Go to TMDB
 2. Sign up for an account
 3. Generate an API key from the Developer section
-4. Add your API key in the `axios` file as follows:
+4. Add your API key in the `.env` file as follows:
+```
+VITE_TMDB_API_KEY=your_api_key_here
+```
 
 ## 🔌 Axios Configuration
 
@@ -74,7 +103,7 @@ cd Movies_website
 npm install
 ```
 
-3. Create a `axios.jsx` file  and add your TMDB API Key:
+3. Create a `.env` file in the root directory and add your TMDB API Key:
 ```
 VITE_TMDB_API_KEY=your_api_key_here
 ```
