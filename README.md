@@ -2,6 +2,32 @@
 
 A modern and responsive movies website built with React, Redux Toolkit, and Tailwind CSS. Browse, search, and explore your favorite movies with an intuitive user interface.
 
+## 🎯 Demo
+
+### Live Demo
+Check out the live demo: [Movies Website](https://movies-website-techcoder645.vercel.app/)
+
+### 📸 Screenshots
+
+#### Home Page
+![Home Page](./public/screenshots/home.png)
+*Browse trending and popular movies with infinite scroll*
+
+#### Movie Details
+![Movie Details](./public/screenshots/movie-details.png)
+*Detailed movie information with cast, trailers, and similar movies*
+
+#### Search Feature
+![Search](./public/screenshots/search.png)
+*Search for your favorite movies with real-time results*
+
+### ✨ Key Features Demo
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- **Dynamic Loading**: Infinite scroll for smooth browsing experience
+- **Video Integration**: Watch trailers and clips directly in the app
+- **Search Functionality**: Real-time search with instant results
+- **Movie Details**: Comprehensive movie information including cast, ratings, and similar movies
+
 ## 🚀 Features
 
 - Modern and responsive design
