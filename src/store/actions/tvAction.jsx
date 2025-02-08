@@ -7,12 +7,14 @@ export const asyncLoadTvShow = (id) => async (dispatch) => {
     
     const [
       detailResponse,
+      externalIdResponse,
       recommendationsResponse,
       similarResponse,
       videosResponse,
       watchProvidersResponse
     ] = await Promise.all([
       axios.get(`/tv/${id}`),
+      axios.get(`/tv/${id}/external_ids`),
       axios.get(`/tv/${id}/recommendations`),
       axios.get(`/tv/${id}/similar`),
       axios.get(`/tv/${id}/videos`),
@@ -21,6 +23,7 @@ export const asyncLoadTvShow = (id) => async (dispatch) => {
 
     const theUltimateDetails = {
       detail: detailResponse.data,
+      externalid: externalIdResponse.data,
       recommendations: recommendationsResponse.data.results,
       similar: similarResponse.data.results,
       videos: videosResponse.data.results,

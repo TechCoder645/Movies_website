@@ -59,7 +59,8 @@ const Moviedetails = () => {
       overview,
       genres,
       homepage,
-      imdb_id
+      imdb_id,
+      
     },
     videos
   } = info;
@@ -79,17 +80,22 @@ const Moviedetails = () => {
         <nav className="w-full text-zinc-400 mb-8">
           <Link
             onClick={() => navigate(-1)}
-            className="ri-arrow-left-line hover:text-[#6556CD] mr-5"
+            className="mr-5 hover:text-[#6556CD] text-2xl text-zinc-400 font-semibold"
           >
-            Back
+            <i className="ri-arrow-left-line"></i>
           </Link>
           {homepage && (
-            <a href={homepage} target="_blank" rel="noopener noreferrer" className="mr-5 hover:text-[#6556CD]">
-              <i className="ri-external-link-fill"></i> Website
+            <a href={homepage} target="_blank" rel="noopener noreferrer" className="mr-5 hover:text-[#6556CD] text-2xl text-zinc-400 font-semibold hover:text-[#6556CD]">
+              <i className="ri-external-link-fill"></i> 
             </a>
           )}
+      
+        <a href={`https://www.wikidata.org/wiki/${info.externalid.wikidata_id}`} target="_blank" rel="noopener noreferrer" className="mr-5 hover:text-[#6556CD] text-2xl text-zinc-400 font-semibold">
+          <i class="ri-earth-fill"></i>
+          </a>
+       
           {imdb_id && (
-            <a href={`https://www.imdb.com/title/${imdb_id}`} target="_blank" rel="noopener noreferrer" className="hover:text-[#6556CD]">
+            <a href={`https://www.imdb.com/title/${imdb_id}`} target="_blank" rel="noopener noreferrer" className="hover:text-[#6556CD] text-2xl text-zinc-400 font-semibold">
               IMDB
             </a>
           )}
