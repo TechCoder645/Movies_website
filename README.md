@@ -1,4 +1,4 @@
-# Movies Website
+# 🎬 Movies Website
 
 A modern and responsive movies website built with React, Redux Toolkit, and Tailwind CSS. Browse, search, and explore your favorite movies with an intuitive user interface.
 
@@ -11,6 +11,7 @@ A modern and responsive movies website built with React, Redux Toolkit, and Tail
 - Redux state management
 - Responsive UI with Tailwind CSS
 - Smooth animations with Framer Motion
+- Fetch real-time movie data using Axios from the TMDB API
 
 ## 🛠️ Technologies Used
 
@@ -24,7 +25,46 @@ A modern and responsive movies website built with React, Redux Toolkit, and Tail
 - React Icons
 - Vite
 
+## 🔗 API Used
+
+This project uses Axios to fetch data from the TMDB (The Movie Database) API, which provides movie details, posters, and other related information.
+
+### Getting API Key
+
+1. Go to TMDB
+2. Sign up for an account
+3. Generate an API key from the Developer section
+4. Add your API key in the `.env` file as follows:
+```
+VITE_TMDB_API_KEY=your_api_key_here
+```
+
+## 🔌 Axios Configuration
+
+The project uses an axios instance for API requests. The configuration is stored in `axios.js`:
+
+```javascript
+import axios from "axios";
+
+const instance = axios.create({
+  baseURL: "https://api.themoviedb.org/3/",
+  headers: {
+    accept: "application/json",
+    Authorization: `Bearer ${import.meta.env.VITE_TMDB_API_KEY}`
+  }
+});
+
+export default instance;
+```
+
 ## 📦 Installation
+
+### Prerequisites
+
+- Ensure you are connected to a VPN before running the project to successfully fetch movie data.
+- Node.js and npm must be installed on your system.
+
+### Steps to Run the Project
 
 1. Clone the repository:
 ```bash
@@ -37,7 +77,12 @@ cd Movies_website
 npm install
 ```
 
-3. Start the development server:
+3. Create a `.env` file in the root directory and add your TMDB API Key:
+```
+VITE_TMDB_API_KEY=your_api_key_here
+```
+
+4. Start the development server (Ensure your VPN is active):
 ```bash
 npm run dev
 ```
@@ -48,10 +93,6 @@ npm run dev
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
-
-## 🌐 Environment Setup
-
-Make sure you have Node.js and npm installed on your system.
 
 ## 🤝 Contributing
 
@@ -74,4 +115,5 @@ TechCoder645
 - React Team
 - Redux Team
 - Tailwind CSS Team
+- TMDB API
 - All other open-source contributors
