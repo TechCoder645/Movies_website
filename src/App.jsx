@@ -10,7 +10,7 @@ import People from "./components/templates/People";
 import About from "./components/templates/About";
 import Contact from "./components/templates/Contact";
 import Moviedetails from "./components/templates/Moviedetails";
-import Peopledetails from "./components/templates/peopledetails";
+import Peopledetails from "./components/templates/Peopledetails";
 import Tvdetails from "./components/templates/Tvdetails";
 
 function App() {
