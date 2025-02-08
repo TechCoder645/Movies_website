@@ -10,7 +10,7 @@ Check out the live demo: [Movies Website](https://movies-website-tmdb.netlify.ap
 ### 📸 Screenshots
 
 #### Home Page
-![Home Page](./public/screenshots/home.png)
+![Home Page](https://github.com/TechCoder645/Movies_website/blob/main/src/assets/home.png?raw=true)
 *Browse trending and popular movies with infinite scroll*
 
 #### Movie Details
